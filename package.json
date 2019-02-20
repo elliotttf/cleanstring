@@ -1,5 +1,5 @@
 {
-  "name": "cleanstring",
+  "name": "path-cleanstring",
   "version": "0.0.0-development",
   "description": "Utility for cleaning strings for use in URIs",
   "main": "lib/index.js",

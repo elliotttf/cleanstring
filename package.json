@@ -1,6 +1,6 @@
 {
   "name": "cleanstring",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Utility for cleaning strings for use in URIs",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elliotttf/cleanstring.git"
+    "url": "https://github.com/elliotttf/cleanstring.git"
   },
   "keywords": [
     "URI",
@@ -61,7 +61,7 @@
     "jest": "^24.0.0",
     "lint-staged": "^8.1.4",
     "prettier": "^1.13.7",
-    "semantic-release": "^15.5.5",
+    "semantic-release": "^15.13.3",
     "semantic-release-conventional-commits": "^2.0.1"
   },
   "dependencies": {},

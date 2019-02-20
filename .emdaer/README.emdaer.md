@@ -12,6 +12,8 @@
         link: 'https://github.com/emdaer/emdaer'
         style: 'flat-square'
 -->
+[![Greenkeeper badge](https://badges.greenkeeper.io/elliotttf/cleanstring.svg)](https://greenkeeper.io/)
+
 
 This module can be used to generate clean strings that can be used in URIs, etc.
 Its implementation is based on and intended to be used in parallel with the

@@ -10,7 +10,8 @@
     "precommit": "lint-staged",
     "prepush": "yarn test",
     "build": "yarn babel src -d lib --delete-dir-on-start --copy-files && flow-copy-source src lib",
-    "prepublish": "yarn build"
+    "prepublish": "yarn build",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -62,8 +63,7 @@
     "semantic-release": "^15.5.5",
     "semantic-release-conventional-commits": "^2.0.1"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=8.10"
   }

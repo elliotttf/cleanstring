@@ -5,11 +5,12 @@
 -->
 
 <!--
-  emdaerHash:ee8f9fd96729e4943b16a4071e75e247
+  emdaerHash:ada0e9b8bff45424d114626b0272988c
 -->
 
 <h1 id="cleanstring">cleanstring</h1>
-<p><a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a></p>
+<p><a href="https://travis-ci.org/elliotttf/cleanstring"><img src="https://travis-ci.org/elliotttf/cleanstring.svg?branch=master" alt="Build Status"></a>
+<a href="https://github.com/emdaer/emdaer"><img src="https://img.shields.io/badge/📓-documented%20with%20emdaer-F06632.svg?style=flat-square" alt="Documented with emdaer"></a></p>
 <p>This module can be used to generate clean strings that can be used in URIs, etc.
 Its implementation is based on and intended to be used in parallel with the
 Drupal module <a href="https://www.drupal.org/project/pathauto">pathauto</a>‘s <a href="http://api.drupalhelp.net/api/pathauto/pathauto.inc/function/pathauto_cleanstring/7">pathauto_cleanstring</a> method.</p>

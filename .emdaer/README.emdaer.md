@@ -3,6 +3,7 @@
   - value: name
 -->
 
+[![Build Status](https://travis-ci.org/elliotttf/cleanstring.svg?branch=master)](https://travis-ci.org/elliotttf/cleanstring)
 <!--emdaer-p
   - '@emdaer/plugin-shields'
   - shields:

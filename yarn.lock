@@ -9319,7 +9319,7 @@ semantic-release-conventional-commits@^2.0.1:
   dependencies:
     conventional-commits-parser "^3.0.0"
 
-semantic-release@^15.5.5:
+semantic-release@^15.13.3:
   version "15.13.3"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.3.tgz#412720b9c09f39f04df67478fa409a914107e05b"
   integrity sha512-cax0xPPTtsxHlrty2HxhPql2TTvS74Ni2O8BzwFHxNY/mviVKEhI4OxHzBYJkpVxx1fMVj36+oH7IlP+SJtPNA==
@@ -9937,6 +9937,11 @@ strip-json-comments@^2.0.0, strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+
+striptags@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/striptags/-/striptags-3.1.1.tgz#c8c3e7fdd6fb4bb3a32a3b752e5b5e3e38093ebd"
+  integrity sha1-yMPn/db7S7OjKjt1LltePjgJPr0=
 
 subarg@^1.0.0:
   version "1.0.0"

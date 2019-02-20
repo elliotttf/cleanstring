@@ -64,7 +64,9 @@
     "semantic-release": "^15.13.3",
     "semantic-release-conventional-commits": "^2.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "striptags": "^3.1.1"
+  },
   "engines": {
     "node": ">=8.10"
   }

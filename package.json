@@ -7,6 +7,7 @@
     "debug-test": "NODE_ENV=test node --inspect-brk ./node_modules/.bin/jest --runInBand",
     "test": "yarn jest --coverage --detectOpenHandles --forceExit",
     "emdaer": "emdaer && git add *.md",
+    "lint": "eslint .",
     "precommit": "lint-staged",
     "prepush": "yarn test",
     "build": "yarn babel src -d lib --delete-dir-on-start --copy-files && flow-copy-source src lib",

@@ -226,12 +226,10 @@ function cleanstring(
 
     // Then remove any ignored words.
     if (mergedConfig.ignoreWords.length) {
-      retString = retString
-        .replace(
-          new RegExp(`\\b${mergedConfig.ignoreWords.join('\\b|\\b')}\\b`, 'ig'),
-          ''
-        )
-        .trim();
+      retString = retString.replace(
+        new RegExp(`\\b${mergedConfig.ignoreWords.join('\\b|\\b')}\\b`, 'ig'),
+        ''
+      );
     }
 
     // Then trim any whitespace.

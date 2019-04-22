@@ -59,4 +59,13 @@ describe('cleanstring', () => {
       'a-quick-brown-8bit-fox-jumps-onto-the-lazy-dog-vinyl-cursus-nibh-eros-pharetra-vim-congue-a-risus'
     );
   });
+
+  test('can trim untraditional whitespace with no ignored words', () => {
+    expect.assertions(1);
+    expect(
+      cleanstring({
+        ignoreWords: [],
+      })(`hello world${decodeURIComponent('%c2%a0')}`)
+    ).toBe('hello-world');
+  });
 });

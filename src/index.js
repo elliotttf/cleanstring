@@ -224,7 +224,7 @@ function cleanstring(
       );
     }
 
-    // Then remove any ignored words and trim whitespace.
+    // Then remove any ignored words.
     if (mergedConfig.ignoreWords.length) {
       retString = retString
         .replace(
@@ -233,6 +233,9 @@ function cleanstring(
         )
         .trim();
     }
+
+    // Then trim any whitespace.
+    retString = retString.trim();
 
     // Then reduce the string to ASCII only characters.
     if (mergedConfig.reduceAscii) {

@@ -1,6 +1,7 @@
 // @flow
 
 const striptags = require('striptags');
+const { transliterate } = require('transliteration');
 
 const REG_EXP_CHAR = /[\\^$.*+?()[\]{}|]/g;
 const REG_EXP_ASCII = /[^a-zA-Z0-9/]+/g;
@@ -97,6 +98,7 @@ const defaultConfig: CleanstringConfig = {
   },
   reduceAscii: false,
   separator: '-',
+  transliterate: false,
 };
 
 /**
@@ -160,6 +162,9 @@ const defaultConfig: CleanstringConfig = {
  *   True if the generated string should have all non-ascii characters removed.
  * @param {string} [config.separator='-']
  *   The character to use to separate words on boundaries.
+ * @param {boolean} [config.transliterate=false]
+ *   True if the generated string should have non-ascii characters
+ *   transliterated.
  *
  * @return {CleanstringCallback}
  *   A function which can be used to clean strings. Accepts a string as its only
@@ -234,6 +239,10 @@ function cleanstring(
 
     // Then trim any whitespace.
     retString = retString.trim();
+
+    if (mergedConfig.transliterate) {
+      retString = transliterate(retString);
+    }
 
     // Then reduce the string to ASCII only characters.
     if (mergedConfig.reduceAscii) {

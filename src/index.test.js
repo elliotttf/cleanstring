@@ -68,4 +68,13 @@ describe('cleanstring', () => {
       })(`hello world${decodeURIComponent('%c2%a0')}`)
     ).toBe('hello-world');
   });
+
+  test('can handle accent characters', () => {
+    expect.assertions(1);
+    expect(
+      cleanstring({
+        transliterate: true,
+      })('Bonne Santé')
+    ).toBe('bonne-sante');
+  });
 });

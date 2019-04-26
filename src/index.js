@@ -215,6 +215,10 @@ function cleanstring(
       // First, strip tags.
       let retString = striptags(string);
 
+      if (mergedConfig.transliterate) {
+        retString = transliterate(retString).replace('…', '...');
+      }
+
       // Then remove desired punctuation.
       if (punctuation[CLEANSTRING_REMOVE].length) {
         retString = retString.replace(
@@ -242,10 +246,6 @@ function cleanstring(
 
       // Then trim any whitespace.
       retString = retString.trim();
-
-      if (mergedConfig.transliterate) {
-        retString = transliterate(retString);
-      }
 
       // Then reduce the string to ASCII only characters.
       if (mergedConfig.reduceAscii) {

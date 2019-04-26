@@ -69,12 +69,23 @@ describe('cleanstring', () => {
     ).toBe('hello-world');
   });
 
-  test('can handle accent characters', () => {
-    expect.assertions(1);
-    expect(
-      cleanstring({
-        transliterate: true,
-      })('Bonne Santé')
-    ).toBe('bonne-sante');
+  describe('transliteration', () => {
+    test('can handle accent characters', () => {
+      expect.assertions(1);
+      expect(
+        cleanstring({
+          transliterate: true,
+        })('Bonne Santé')
+      ).toBe('bonne-sante');
+    });
+
+    test('can convert ellipses', () => {
+      expect.assertions(1);
+      expect(
+        cleanstring({
+          transliterate: true,
+        })('Hello world…')
+      ).toBe('hello-world');
+    });
   });
 });

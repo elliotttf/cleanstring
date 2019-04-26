@@ -65,6 +65,7 @@
     "semantic-release-conventional-commits": "^2.0.1"
   },
   "dependencies": {
+    "lodash.memoize": "^4.1.2",
     "striptags": "^3.1.1",
     "transliteration": "^2.1.3"
   },

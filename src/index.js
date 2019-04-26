@@ -254,6 +254,7 @@ function cleanstring(
 
       // Then filter down the string to fit within the max length.
       const components = retString
+        .replace(/…$/, '')
         .replace(/\s{2,}/g, ' ')
         .split(' ')
         .filter(i => i);

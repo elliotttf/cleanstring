@@ -77,4 +77,9 @@ describe('cleanstring', () => {
       })('Bonne Santé')
     ).toBe('bonne-sante');
   });
+
+  test('can remove trailing ellipsis', () => {
+    expect.assertions(1);
+    expect(cleanstring()('Hello world…')).toBe('hello-world');
+  });
 });

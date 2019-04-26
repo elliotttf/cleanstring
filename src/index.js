@@ -1,5 +1,6 @@
 // @flow
 
+const memoize = require('lodash.memoize');
 const striptags = require('striptags');
 const { transliterate } = require('transliteration');
 
@@ -28,6 +29,7 @@ export type CleanstringConfig = {
   },
   reduceAscii: boolean,
   separator: string,
+  transliterate: Boolean,
 };
 
 const defaultConfig: CleanstringConfig = {
@@ -203,83 +205,87 @@ function cleanstring(
    * @retrun {string}
    *   The cleaned string.
    */
-  return (string: string): string => {
-    // Short circuit any more work if we're starting with an empty string.
-    if (string === '' || string === null) {
-      return '';
-    }
-
-    // First, strip tags.
-    let retString = striptags(string);
-
-    // Then remove desired punctuation.
-    if (punctuation[CLEANSTRING_REMOVE].length) {
-      retString = retString.replace(
-        new RegExp(punctuation[CLEANSTRING_REMOVE].join('|'), 'g'),
-        ''
-      );
-    }
-
-    // Then replace desired punctuation. Whitespace will be replaced with
-    // separator characters below.
-    if (punctuation[CLEANSTRING_REPLACE].length) {
-      retString = retString.replace(
-        new RegExp(punctuation[CLEANSTRING_REPLACE].join('|'), 'g'),
-        ' '
-      );
-    }
-
-    // Then remove any ignored words.
-    if (mergedConfig.ignoreWords.length) {
-      retString = retString.replace(
-        new RegExp(`\\b${mergedConfig.ignoreWords.join('\\b|\\b')}\\b`, 'ig'),
-        ''
-      );
-    }
-
-    // Then trim any whitespace.
-    retString = retString.trim();
-
-    if (mergedConfig.transliterate) {
-      retString = transliterate(retString);
-    }
-
-    // Then reduce the string to ASCII only characters.
-    if (mergedConfig.reduceAscii) {
-      retString = retString.replace(REG_EXP_ASCII, ' ');
-    }
-
-    // Then filter down the string to fit within the max length.
-    const components = retString
-      .replace(/\s{2,}/g, ' ')
-      .split(' ')
-      .filter(i => i);
-
-    let tString = '';
-    let i = 0;
-    while (
-      i < components.length &&
-      tString.length < mergedConfig.maxComponentLength
-    ) {
-      const prefix = `${tString ? `${tString}${mergedConfig.separator}` : ''}`;
-      if (
-        `${prefix}${components[i]}`.length <= mergedConfig.maxComponentLength
-      ) {
-        tString = `${prefix}${components[i]}`;
-      } else {
-        break;
+  return memoize(
+    (string: string): string => {
+      // Short circuit any more work if we're starting with an empty string.
+      if (string === '' || string === null) {
+        return '';
       }
-      i++;
-    }
-    retString = tString;
 
-    // Then, optionally convert the string to lowercase.
-    if (mergedConfig.case) {
-      retString = retString.toLowerCase();
-    }
+      // First, strip tags.
+      let retString = striptags(string);
 
-    return retString;
-  };
+      // Then remove desired punctuation.
+      if (punctuation[CLEANSTRING_REMOVE].length) {
+        retString = retString.replace(
+          new RegExp(punctuation[CLEANSTRING_REMOVE].join('|'), 'g'),
+          ''
+        );
+      }
+
+      // Then replace desired punctuation. Whitespace will be replaced with
+      // separator characters below.
+      if (punctuation[CLEANSTRING_REPLACE].length) {
+        retString = retString.replace(
+          new RegExp(punctuation[CLEANSTRING_REPLACE].join('|'), 'g'),
+          ' '
+        );
+      }
+
+      // Then remove any ignored words.
+      if (mergedConfig.ignoreWords.length) {
+        retString = retString.replace(
+          new RegExp(`\\b${mergedConfig.ignoreWords.join('\\b|\\b')}\\b`, 'ig'),
+          ''
+        );
+      }
+
+      // Then trim any whitespace.
+      retString = retString.trim();
+
+      if (mergedConfig.transliterate) {
+        retString = transliterate(retString);
+      }
+
+      // Then reduce the string to ASCII only characters.
+      if (mergedConfig.reduceAscii) {
+        retString = retString.replace(REG_EXP_ASCII, ' ');
+      }
+
+      // Then filter down the string to fit within the max length.
+      const components = retString
+        .replace(/\s{2,}/g, ' ')
+        .split(' ')
+        .filter(i => i);
+
+      let tString = '';
+      let i = 0;
+      while (
+        i < components.length &&
+        tString.length < mergedConfig.maxComponentLength
+      ) {
+        const prefix = `${
+          tString ? `${tString}${mergedConfig.separator}` : ''
+        }`;
+        if (
+          `${prefix}${components[i]}`.length <= mergedConfig.maxComponentLength
+        ) {
+          tString = `${prefix}${components[i]}`;
+        } else {
+          break;
+        }
+        i++;
+      }
+      retString = tString;
+
+      // Then, optionally convert the string to lowercase.
+      if (mergedConfig.case) {
+        retString = retString.toLowerCase();
+      }
+
+      return retString;
+    }
+  );
 }
 
 module.exports = {

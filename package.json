@@ -42,7 +42,7 @@
     "@emdaer/plugin-shields": "^3.2.4",
     "@emdaer/plugin-value-from-package": "^3.2.4",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "babel-jest": "^24.0.0",
     "commitlint": "^7.0.0",
     "eslint": "^5.14.1",

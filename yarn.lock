@@ -831,10 +831,10 @@
     js-yaml "3.8.4"
     marked "^0.3.19"
 
-"@emdaer/plugin-documentation@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-documentation/-/plugin-documentation-3.2.4.tgz#1eb1bf5cfaf391e506add2af0d40ab42b7db9a71"
-  integrity sha512-aav2MS4/AQ0XtJcz7ORlmfeBQBRNKvpTHGUJL3xR4qK+YUPh6xw2bAfjN91S/oesk2LCKYIRDRtUY16sE7aezw==
+"@emdaer/plugin-documentation@^3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-documentation/-/plugin-documentation-3.2.6.tgz#32f0571cbb02df3d799226213702a093afe5e471"
+  integrity sha512-rUm8PyI9J+U3Z4x9s6Dle+/iuYHq5afDge24afN/LG9ZQeGpgHLeYQ/taq1AGx+9Y8mO1sZBYUjQMEF9t+bXdA==
   dependencies:
     documentation "4.0.0-rc.1"
 

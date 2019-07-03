@@ -809,12 +809,12 @@
   dependencies:
     find-up "^2.1.0"
 
-"@emdaer/cli@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/cli/-/cli-3.2.4.tgz#c1fc976085242aa96146d2481775cc9f1a015657"
-  integrity sha512-0708rtDFWniA7RS5UK4LCh5/szBH7zeLGMAVuJ0ClW4u8pkfVwjf0Wtcwa21WY8bW9bgODag85WGGTl4WM3lyA==
+"@emdaer/cli@^3.2.10":
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/@emdaer/cli/-/cli-3.2.10.tgz#5237ad938d63bebc6707f1af44b12e88c2112411"
+  integrity sha512-s/MFDbLTw80bM1UHrDGrdqNtUM8Zq3yh4xbx2zP1JmVWjeU3wn7u2WuAsJ8m91Pqu7qkUMJpx8386ZpOe50jdw==
   dependencies:
-    "@emdaer/core" "^3.2.4"
+    "@emdaer/core" "^3.2.10"
     bluebird "^3.5.1"
     chalk "^2.4.1"
     commander "2.11.0"
@@ -822,10 +822,10 @@
     glob "^7.1.2"
     inquirer "^5.1.0"
 
-"@emdaer/core@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.4.tgz#419b81ad423af4a27ffe3baccd58ac7c6b269f15"
-  integrity sha512-OLBeRSykEcBMfQLfhMjIDqZHjQ5doGeyGD68aRfTjQkOHAU0a3irpanNt0utAbu55AXPPsaAKPxNAeaSzkPNkg==
+"@emdaer/core@^3.2.10":
+  version "3.2.10"
+  resolved "https://registry.yarnpkg.com/@emdaer/core/-/core-3.2.10.tgz#099fd15b489095f8dba24a3e78714b86ace45b5e"
+  integrity sha512-BwT2doFzDtzz16XgoF2xw3rg+wwHmTP/amGYMChbCbn84QXhqfFooX0MhUQARtxwLQXb0HTnIwxysiqjWjXC5Q==
   dependencies:
     html-minifier "^3.5.14"
     js-yaml "3.8.4"

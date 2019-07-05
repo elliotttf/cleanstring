@@ -39,7 +39,7 @@
     "@commitlint/config-angular": "^7.0.1",
     "@emdaer/cli": "^3.2.4",
     "@emdaer/plugin-documentation": "^3.2.4",
-    "@emdaer/plugin-shields": "^3.2.4",
+    "@emdaer/plugin-shields": "^3.2.16",
     "@emdaer/plugin-value-from-package": "^3.2.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",

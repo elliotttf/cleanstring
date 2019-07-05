@@ -838,10 +838,10 @@
   dependencies:
     documentation "4.0.0-rc.1"
 
-"@emdaer/plugin-shields@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-shields/-/plugin-shields-3.2.4.tgz#f96d611c9dc3f79c11b79d010ea5c95fe8e2e85b"
-  integrity sha512-m+KSlNO9E8Wo4fSuqn1NsWZX7EU0zct/C++QokUzqhefh32YGkVHbP2I8Kc24wsnfCE1sBnhXQRPkMfvN9E5sw==
+"@emdaer/plugin-shields@^3.2.16":
+  version "3.2.16"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-shields/-/plugin-shields-3.2.16.tgz#78b40ffb6ae30f4781cb6b39d9af379c20633032"
+  integrity sha512-HTa7woKn2e6cIh57BRFIB3JdCApemMNfAQBNvawBmmz2OAcV04nhN4krbDdxwWWF7SujPss0WwRtxKG3iOGstw==
 
 "@emdaer/plugin-value-from-package@^3.2.4":
   version "3.2.4"

@@ -46,7 +46,7 @@
     "babel-jest": "^24.0.0",
     "commitlint": "^7.0.0",
     "eslint": "^5.14.1",
-    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-config-problems": "^2.0.0",
     "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-better": "^0.1.5",

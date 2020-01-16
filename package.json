@@ -44,7 +44,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.0.0",
-    "commitlint": "^7.0.0",
+    "commitlint": "^8.3.5",
     "eslint": "^5.14.1",
     "eslint-config-prettier": "^4.0.0",
     "eslint-config-problems": "^2.0.0",

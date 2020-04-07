@@ -35,7 +35,7 @@
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
-    "@babel/preset-flow": "^7.0.0-beta.54",
+    "@babel/preset-flow": "^7.9.0",
     "@commitlint/config-angular": "^7.0.1",
     "@emdaer/cli": "^3.2.4",
     "@emdaer/plugin-documentation": "^3.2.4",

@@ -843,12 +843,12 @@
   resolved "https://registry.yarnpkg.com/@emdaer/plugin-shields/-/plugin-shields-3.2.4.tgz#f96d611c9dc3f79c11b79d010ea5c95fe8e2e85b"
   integrity sha512-m+KSlNO9E8Wo4fSuqn1NsWZX7EU0zct/C++QokUzqhefh32YGkVHbP2I8Kc24wsnfCE1sBnhXQRPkMfvN9E5sw==
 
-"@emdaer/plugin-value-from-package@^3.2.4":
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.4.tgz#19a82dba30a4baf3cbbf3c3e449cc3b11a3dce5b"
-  integrity sha512-kBOnB/bKWSr0nA4J+TTvaCBlyCgkiAyc90hUppG8XTnKdtb3dSP84EenHwt+gBoxCy40YgQTN35dR58wi32qgg==
+"@emdaer/plugin-value-from-package@^3.2.31":
+  version "3.2.31"
+  resolved "https://registry.yarnpkg.com/@emdaer/plugin-value-from-package/-/plugin-value-from-package-3.2.31.tgz#f0132e19d87a5e4e9c4e4da1c6a89e50b2dc439a"
+  integrity sha512-PqquYjikhZAzIppwLzgfg9HSz2BN0Gzecxe4mRGz8oJ0QwzMDWJtVrnssmbz2vOVrp5C6W1DFwoAgDkW8THtrA==
   dependencies:
-    fs-extra "3.0.1"
+    fs-extra "8.1.0"
 
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
@@ -4356,6 +4356,15 @@ fs-extra@3.0.1:
     jsonfile "^3.0.0"
     universalify "^0.1.0"
 
+fs-extra@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-extra@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-5.0.0.tgz#414d0110cdd06705734d055652c5411260c31abd"
@@ -4743,6 +4752,11 @@ graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2
   version "4.1.15"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+
+graceful-fs@^4.2.0:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
+  integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
 growly@^1.3.0:
   version "1.3.0"

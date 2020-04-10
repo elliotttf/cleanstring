@@ -40,7 +40,7 @@
     "@emdaer/cli": "^3.2.4",
     "@emdaer/plugin-documentation": "^3.2.4",
     "@emdaer/plugin-shields": "^3.2.4",
-    "@emdaer/plugin-value-from-package": "^3.2.4",
+    "@emdaer/plugin-value-from-package": "^3.2.31",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.0.0",

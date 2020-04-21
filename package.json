@@ -60,7 +60,7 @@
     "husky": "^2.0.0",
     "jest": "^24.0.0",
     "lint-staged": "^8.1.4",
-    "prettier": "^1.13.7",
+    "prettier": "^2.0.5",
     "semantic-release": "^15.13.3",
     "semantic-release-conventional-commits": "^2.0.1"
   },

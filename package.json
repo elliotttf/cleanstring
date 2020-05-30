@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
-    "@babel/node": "^7.0.0-beta.54",
+    "@babel/node": "^7.10.1",
     "@babel/preset-env": "^7.0.0-beta.54",
     "@babel/preset-flow": "^7.0.0-beta.54",
     "@commitlint/config-angular": "^7.0.1",
